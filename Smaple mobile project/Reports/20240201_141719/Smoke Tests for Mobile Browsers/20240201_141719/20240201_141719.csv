@@ -1,0 +1,15 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Smoke Tests for Mobile Browsers,Chrome 120.0.0.0,,,01-02-2024 14:17:29,01-02-2024 14:17:52,22.492s,PASSED
+,,,,,,,
+Test Cases/Verify Login CURA System Successfully - Mobile Browsers,Chrome 120.0.0.0,,,01-02-2024 14:17:30,01-02-2024 14:17:52,22.068s,PASSED
+"comment(""Story: Login to CURA system"")",Chrome 120.0.0.0,,,01-02-2024 14:17:30,01-02-2024 14:17:30,0.114s,PASSED
+"comment(""Given that the user has the valid login information"")",Chrome 120.0.0.0,,,01-02-2024 14:17:30,01-02-2024 14:17:30,0.007s,PASSED
+openBrowser(G_SiteURL),Chrome 120.0.0.0,,,01-02-2024 14:17:30,01-02-2024 14:17:39,8.580s,PASSED
+"click(findTestObject(""Web Browser/btn_MakeAppointment""))",Chrome 120.0.0.0,,,01-02-2024 14:17:39,01-02-2024 14:17:40,1.314s,PASSED
+"setText(findTestObject(""Web Browser/txt_Username""), Username)",Chrome 120.0.0.0,,,01-02-2024 14:17:40,01-02-2024 14:17:44,3.586s,PASSED
+"setEncryptedText(findTestObject(""Web Browser/txt_Password""), Password)",Chrome 120.0.0.0,,,01-02-2024 14:17:44,01-02-2024 14:17:46,1.971s,PASSED
+"comment(""When he logins to CURA system"")",Chrome 120.0.0.0,,,01-02-2024 14:17:46,01-02-2024 14:17:46,0.005s,PASSED
+"click(findTestObject(""Web Browser/btn_Login""))",Chrome 120.0.0.0,,,01-02-2024 14:17:46,01-02-2024 14:17:50,4.312s,PASSED
+"comment(""Then he should be able to login successfully"")",Chrome 120.0.0.0,,,01-02-2024 14:17:50,01-02-2024 14:17:50,0.005s,PASSED
+"verifyTextPresent(""Make Appointment"", false)",Chrome 120.0.0.0,,,01-02-2024 14:17:50,01-02-2024 14:17:51,1.611s,PASSED
+closeBrowser(),Chrome 120.0.0.0,,,01-02-2024 14:17:51,01-02-2024 14:17:52,0.244s,PASSED

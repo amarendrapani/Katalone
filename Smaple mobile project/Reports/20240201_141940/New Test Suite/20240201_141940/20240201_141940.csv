@@ -1,0 +1,29 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+New Test Suite,Chrome 120.0.0.0,,,01-02-2024 14:19:52,01-02-2024 14:20:14,22.285s,FAILED
+,,,,,,,
+Test Cases/Verify Correct Alarm Message,Chrome 120.0.0.0,"- An automation script to help user getting started with Mobile automation testing.
+- Script Content: Click ""START ALARM SERVICE"" and click ""STOP ALARM SERVICE"", verify alert show is correct",,01-02-2024 14:19:53,01-02-2024 14:19:53,0.040s,FAILED
+"comment(""Story: Verify correct alarm message"")",Chrome 120.0.0.0,,,01-02-2024 14:19:53,01-02-2024 14:19:53,0.003s,PASSED
+"comment(""Given that user has started an application"")",Chrome 120.0.0.0,,,01-02-2024 14:19:53,01-02-2024 14:19:53,0.002s,PASSED
+"appPath = relativeToAbsolutePath(G_AppPath, getProjectDir())",Chrome 120.0.0.0,Get full directory's path of android application,,01-02-2024 14:19:53,01-02-2024 14:19:53,0.000s,PASSED
+"startApplication(appPath, false)",Chrome 120.0.0.0,,,01-02-2024 14:19:53,01-02-2024 14:19:53,0.007s,FAILED
+,,,,,,,
+Test Cases/Verify Last Items In List,Chrome 120.0.0.0,"- An automation script to help user getting started with Mobile automation testing.
+- Script Content: Open the application and verify the items show full when the items over loading",,01-02-2024 14:19:54,01-02-2024 14:19:54,0.032s,FAILED
+"comment(""Story: Verify correct alarm message"")",Chrome 120.0.0.0,,,01-02-2024 14:19:54,01-02-2024 14:19:54,0.002s,PASSED
+"comment(""Given that user has started an application"")",Chrome 120.0.0.0,,,01-02-2024 14:19:54,01-02-2024 14:19:54,0.004s,PASSED
+"appPath = relativeToAbsolutePath(G_AppPath, getProjectDir())",Chrome 120.0.0.0,Get full directory's path of android application,,01-02-2024 14:19:54,01-02-2024 14:19:54,0.001s,PASSED
+"startApplication(appPath, false)",Chrome 120.0.0.0,,,01-02-2024 14:19:54,01-02-2024 14:19:54,0.006s,FAILED
+,,,,,,,
+Test Cases/Verify Login CURA System Successfully - Mobile Browsers,Chrome 120.0.0.0,,,01-02-2024 14:19:54,01-02-2024 14:20:14,20.444s,PASSED
+"comment(""Story: Login to CURA system"")",Chrome 120.0.0.0,,,01-02-2024 14:19:54,01-02-2024 14:19:54,0.025s,PASSED
+"comment(""Given that the user has the valid login information"")",Chrome 120.0.0.0,,,01-02-2024 14:19:54,01-02-2024 14:19:54,0.006s,PASSED
+openBrowser(G_SiteURL),Chrome 120.0.0.0,,,01-02-2024 14:19:54,01-02-2024 14:20:08,13.775s,PASSED
+"click(findTestObject(""Web Browser/btn_MakeAppointment""))",Chrome 120.0.0.0,,,01-02-2024 14:20:08,01-02-2024 14:20:10,2.482s,PASSED
+"setText(findTestObject(""Web Browser/txt_Username""), Username)",Chrome 120.0.0.0,,,01-02-2024 14:20:10,01-02-2024 14:20:11,1.041s,PASSED
+"setEncryptedText(findTestObject(""Web Browser/txt_Password""), Password)",Chrome 120.0.0.0,,,01-02-2024 14:20:11,01-02-2024 14:20:12,0.680s,PASSED
+"comment(""When he logins to CURA system"")",Chrome 120.0.0.0,,,01-02-2024 14:20:12,01-02-2024 14:20:12,0.004s,PASSED
+"click(findTestObject(""Web Browser/btn_Login""))",Chrome 120.0.0.0,,,01-02-2024 14:20:12,01-02-2024 14:20:13,1.477s,PASSED
+"comment(""Then he should be able to login successfully"")",Chrome 120.0.0.0,,,01-02-2024 14:20:13,01-02-2024 14:20:13,0.008s,PASSED
+"verifyTextPresent(""Make Appointment"", false)",Chrome 120.0.0.0,,,01-02-2024 14:20:13,01-02-2024 14:20:14,0.506s,PASSED
+closeBrowser(),Chrome 120.0.0.0,,,01-02-2024 14:20:14,01-02-2024 14:20:14,0.273s,PASSED
